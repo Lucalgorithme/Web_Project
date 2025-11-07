@@ -1,0 +1,120 @@
+.account-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #f8f9fa;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #495057;
+}
+
+.token-badge {
+    background: linear-gradient(45deg, #ffc107, #fd7e14);
+    color: #212529;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.account-section {
+    background: rgba(52, 58, 64, 0.7);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(108, 117, 125, 0.3);
+}
+
+.account-section h2 {
+    color: #e9ecef;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #495057;
+}
+
+.account-form .form-control,
+.upload-form .form-control {
+    background-color: rgba(40, 45, 50, 0.8);
+    border: 1px solid #495057;
+    color: #f8f9fa;
+}
+
+.account-form .form-control:focus,
+.upload-form .form-control:focus {
+    background-color: rgba(40, 45, 50, 0.9);
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.25);
+}
+
+.upload-form .input-group {
+    margin-bottom: 1rem;
+}
+
+.upload-form .btn {
+    background: linear-gradient(45deg, #17a2b8, #28a745);
+    border: none;
+}
+
+.competence-card {
+    background: rgba(40, 45, 50, 0.6);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #17a2b8;
+}
+
+.competence-card.new {
+    border-left-color: #28a745;
+}
+
+.competence-card h3 {
+    color: #17a2b8;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.account-danger {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #495057;
+}
+
+.account-danger .btn {
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+}
+
+.alert-warning {
+    color: #ffc107;
+    background-color: rgba(255, 193, 7, 0.1);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .account-container {
+        padding: 1rem;
+    }
+    
+    .account-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .token-badge {
+        margin-top: 0.5rem;
+    }
+}

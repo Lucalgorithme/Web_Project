@@ -1,0 +1,211 @@
+body {
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+}
+
+h1 {
+  color: #f8f9fa !important;
+  font-weight: 300 !important;
+  text-align: center;
+  margin: 2rem 0 !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+h3, h4, h5, h6 {
+  color: #e9ecef !important;
+  font-weight: 400 !important;
+  margin: 1.5rem 0 1rem 0 !important;
+}
+
+h3 {
+  border-bottom: 2px solid #495057;
+  padding-bottom: 0.5rem;
+}
+
+.echange-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.echange-card {
+  background: rgba(52, 58, 64, 0.8) !important;
+  border: 1px solid rgba(108, 117, 125, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.echange-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  border-color: rgba(23, 162, 184, 0.5);
+}
+
+.echange-info {
+  color: #f8f9fa !important;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.echange-info div {
+  margin-bottom: 0.5rem;
+}
+
+.message-container {
+  margin: 1.5rem 0;
+}
+
+.message {
+  background: rgba(40, 45, 50, 0.7);
+  border-left: 3px solid #17a2b8;
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.message-author {
+  color: #17a2b8 !important;
+  font-weight: 500;
+}
+
+form {
+  margin: 1.5rem 0;
+}
+
+.form-floating {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  background-color: rgba(52, 58, 64, 0.8) !important;
+  border: 1px solid #495057 !important;
+  color: #f8f9fa !important;
+}
+
+.form-control:focus {
+  background-color: rgba(52, 58, 64, 0.9) !important;
+  border-color: #17a2b8 !important;
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.25) !important;
+  color: #f8f9fa !important;
+}
+
+.btn {
+  transition: all 0.3s ease !important;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #17a2b8, #28a745) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 0.6rem 1.5rem !important;
+  font-weight: 500 !important;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #138496, #218838) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(23, 162, 184, 0.3) !important;
+}
+
+.btn-success {
+  background: linear-gradient(45deg, #28a745, #20c997) !important;
+  border: none !important;
+}
+
+.btn-danger {
+  background: linear-gradient(45deg, #dc3545, #fd7e14) !important;
+  border: none !important;
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.vote-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.vote-up {
+  background-color: #28a745;
+  color: white;
+}
+
+.vote-down {
+  background-color: #dc3545;
+  color: white;
+}
+
+.vote-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+a {
+  color: #17a2b8 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #20c997 !important;
+  text-decoration: none;
+}
+
+.alert-warning {
+  color: #ffc107 !important;
+}
+
+.alert-success {
+  color: #28a745 !important;
+}
+
+@media (max-width: 768px) {
+  .echange-card {
+    padding: 1rem;
+  }
+  
+  .vote-buttons {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  h3 {
+    font-size: 1.3rem !important;
+  }
+}
+
+.echange-card {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
